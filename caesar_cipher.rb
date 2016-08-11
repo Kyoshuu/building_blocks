@@ -19,4 +19,8 @@ def caesar_cipher(string, shift)
 	caesar_string
 end
 
-puts caesar_cipher("What a string!", 5)
+print "What string would you like to encrypt: "
+str = gets
+print "Shift: "
+shift = gets
+puts caesar_cipher(str, shift.to_i)
